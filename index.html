@@ -6,11 +6,34 @@
     <title>Home page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href=''>
+
+    <!-- id =>واله اولويه اكثر, لعنصر واحد فقط-->
+    <style>
+        div{
+            background-color: yellow;
+        }
+        .group1{
+            color: yellow;
+        }
+        .group2{
+            color: blue;
+        }
+        #newId{
+            color: green;
+        }
+        table{
+            border: 1px solid green;
+        }
+        thead{
+            border: 1px solid green;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>this is h1</h1>
+    <!-- <h1>this is h1</h1>
     <h2>this is h2</h1>
-    <h3>this is h3</h1>
+    <h3>this is h3</h1>d
     <h4>this is h4</h1>
     <h5>this is h5</h1>
     <h6>this is h6</h1>
@@ -18,8 +41,44 @@
     <img src="" alt="this is a image">
     <img src="https://t3.ftcdn.net/jpg/02/16/60/42/360_F_216604243_4yvQhIudgknAWu04Ob7aSOu6BdIfhBNb.jpg">
     <button>this is a button</button> <br>
-    <a href="/news.html">this is a new Page</a>
+    <a href="/news.html">this is a new Page</a> -->
 
+    <!-- lecture 2 -->
+
+    <h1 class="group1">This is a html table</h1>
+    <h1 class="group2">second h2</h1>
+    <h1 class="group2" id="newId">second h3</h1>
+    <h1 class="group1" id="newId">second h4</h1>
+    <div>
+        <p>This is p inside div</p> 
+    </div>
+    <!-- <section>
+        <p>This is p inside section</p>
+    </section> -->
+    <table>
+
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Link</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Html</td>
+            <td>go to</td>
+        </tr>
+        <tr>
+        <td>2</td>
+        <td>form</td>
+        <td>go to</td>
+        </tr>
+    </tbody>
+
+    </table>
     
     <script src="" async defer></script>
 </body>
