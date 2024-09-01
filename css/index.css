@@ -1,0 +1,34 @@
+#navList{
+    list-style: none;
+    display: inline;
+    margin-left: 200px;/* بتحرك بالعكس اذا حاط ليفت بطلعلي رايت */ 
+}
+
+#navBar img{
+    display: inline;
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+#navList li{
+    display: inline-block; /* جنب بعض */
+    margin-right: 180px; /* المسافه بين العنصر والعنصر */
+}
+
+#navBar{
+    background-color: gray;
+    border-radius: 20px; /* الزوايا */
+}
+
+#navList button{
+    background-color: turquoise;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    color: white; /* تعديل لون الخط */
+}
+
+#navList button:hover{
+    background-color: blue;
+}
