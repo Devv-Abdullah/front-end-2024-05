@@ -2,6 +2,7 @@
     list-style: none;
     display: inline;
     margin-left: 200px;/* بتحرك بالعكس اذا حاط ليفت بطلعلي رايت */ 
+    margin-left: 10px;
 }
 
 #navBar img{
