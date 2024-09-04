@@ -50,16 +50,58 @@
 
 #contant{
     text-align: center;
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-areas:
+    'item1 item1 item1 item1 item1'
+    'item2 item3 item3 item3 item4'
+    'item5 item5 item5 item5 item5' 
+    ;
 }
 
-.item{
+#item1{
+    grid-area: item1;
+    width: 100%;
+    /* background-color: red; */
+    height: 100%;
+}
+
+#item2{
+    grid-area: item2;
+    width: 100%;
+    background-color: blue;
+    height: 200px;
+}
+
+#item3{
+    grid-area: item3;
+    width: 100%;
+    background-color: green;
+    height: 200px;
+}
+
+#item4{
+    grid-area: item4;
+    width: 100%;
+    background-color: yellow;
+    height: 200px;
+}
+
+#item5{
+    grid-area: item5;
+    width: 100%;
+    background-color: burlywood;
+    height: 200px;
+}
+
+/* .item{
     background-color: bisque;
     width: 400px;
     border-radius: 10px;
-    display: inline-block;
+    display: inline-block; 
     margin-right: 20px;
     margin-top: 20px;
-}
+} */
 
 /* .item img:hover{
     width: 110%;
