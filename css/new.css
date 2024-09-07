@@ -88,5 +88,5 @@ button{
 }
 
 .item p:hover{
-    color: lightgreen;
+    text-shadow: 1px 1px 10px green;;
 }
