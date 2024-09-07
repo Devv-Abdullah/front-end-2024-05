@@ -2,5 +2,6 @@
     "ayat.repeatedEveryMinute": 10,
     "cSpell.words": [
         "contant"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
