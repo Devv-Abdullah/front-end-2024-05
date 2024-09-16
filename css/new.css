@@ -91,3 +91,26 @@ button{
 .item p:hover{
     text-shadow: 1px 1px 10px green;
 }
+
+#shape{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 20px;
+}
+
+#shape:hover{
+    width: 100%;
+    transition: 3s;
+}
+
+#bar{
+    width: 100%;
+    border: 3px solid blue;
+    border-radius: 20px;
+}
+
+.item img:hover{
+    width: 200px;
+    transition: 0.5s;
+}
