@@ -1,0 +1,72 @@
+#navBar{
+    background-color: gray;
+}
+
+#navBar img{
+    width: 100px;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.navList{
+    list-style: none;
+    display: inline-flex;
+    float: right;
+    margin-top: 50px;
+}
+
+.navList li{
+    margin-right: 80px;
+}
+
+.navButton{
+    font-size: 20px;
+    padding: 10px 30px; 
+    border-radius: 20px;
+}
+
+#gridMain{
+    display: grid;
+    grid-template-columns: auto auto auto; /* تعملهم صفوف */
+    
+}
+
+.hoverImage:hover{
+    width: 400px;
+    border: 2px solid black;
+}
+
+/* mobile view */
+@media screen and (max-width: 600px){
+    /* body{
+        background-color: red;
+    } */
+
+    #gridMain{
+        grid-template-columns: auto auto;
+    }
+
+    .navList{
+        margin-top: 0px;
+        float: none;
+    }
+
+    .gridItem img{
+        width: 100%;
+    }
+
+    #navBar img{
+        margin-left: 40%;
+    } 
+
+    .navList{
+        width: 100%;
+    }
+
+    .navList li{
+        margin-right: 10%;
+        width: 100%;
+        padding: 0px;
+    }
+}
