@@ -115,7 +115,24 @@ body{
 /* res desktop */
 @media screen and (max-width:1024px) {
     body{
-        background-color: green;
+        background-color: tomato;
+    }
+
+    #navList{
+        display: flex;
+        margin-top: 50px;
+    }
+
+    #navBar img{
+        display: block;
+    }
+
+    #item1{
+        margin-bottom: 30px;
+    }
+
+    #navList button{
+        margin-bottom: 10px;
     }
 }
 
