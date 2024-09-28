@@ -41,18 +41,83 @@ var sample = null
 
 //   == : value , === :> value and data type
 //   =>, =< , ==<, ==>, !=
-if(age2 == '25'){
-    console.log("the condition is true")
+// if(age2 == '25'){
+//     console.log("the condition is true")
+// }
+// else{
+//     console.log("ths condition is false")
+// }
+
+// console.log("___________________________________")
+
+// if(age2 === '25'){
+//     console.log("the condition is true")
+// }
+// else{
+//     console.log("ths condition is false")
+// }
+
+// new lecture
+
+// document كلشي بال html
+
+/*var ulList = document.getElementById('navList')
+console.log('search by if',ulList)
+var ulList2 = document.getElementsByClassName('ulList')
+console.log('Search by class',ulList2) */
+
+/*var h1 = document.getElementsByTagName('h1') [0]
+console.log('h1 tag',h1)
+// h1.innerHTML = "this is from js"
+h1.innerText = "this is from js"
+h1.style.color = "blue"
+h1.style.backgroundColor = "yellow" */
+
+/*var body = document.getElementsByTagName('body')[0]
+function changeBGRed(){
+    body.style.backgroundColor = "red"
 }
-else{
-    console.log("ths condition is false")
+function changeBGBlue(){
+    body.style.backgroundColor = "blue"
+}
+function changeBGGreen(){
+    body.style.backgroundColor = "green"
+}
+function changeBGYellow(){
+    body.style.backgroundColor = "yellow"
+}
+function changeBGBlack(){
+    body.style.backgroundColor = "black"
+}*/
+
+var body = document.getElementsByTagName('body')[0]
+//argument > value passed to the function
+function changeBG(color){
+    body.style.backgroundColor = color
+}
+var h1 = document.getElementsByTagName('h1')[0]
+var changed = false
+function changeH1(){
+    // if(h1.innerHTML === "new page"){
+    // h1.innerText = "this is from js function"
+    // }
+    // else{
+    //     h1.innerText = "new page"
+    // }
+    if(changed == false){
+        h1.innerHTML = "this is from js function"
+        changed = true
+    }
+    else{
+        h1.innerText = "new page"
+        changed = false
+    }
 }
 
-console.log("___________________________________")
-
-if(age2 === '25'){
-    console.log("the condition is true")
-}
-else{
-    console.log("ths condition is false")
+var screen = document.getElementById('screen')
+function fullScreen(){
+    screen.log('full screen')
+    screen.requestFullscreen()
+    // screen.webkitRequestFullscreen()
+    document.exitFullscreen()
 }
