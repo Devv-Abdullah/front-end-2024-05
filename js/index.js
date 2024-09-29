@@ -57,23 +57,25 @@ var sample = null
 //     console.log("ths condition is false")
 // }
 
+
 // new lecture
 
 // document كلشي بال html
 
-/*var ulList = document.getElementById('navList')
-console.log('search by if',ulList)
+/* var ulList = document.getElementById('navList')
+console.log(('search by id'),ulList)
 var ulList2 = document.getElementsByClassName('ulList')
-console.log('Search by class',ulList2) */
+console.log('search by class',ulList2[0]) */
 
-/*var h1 = document.getElementsByTagName('h1') [0]
+/*var h1 = document.getElementsByTagName("h1")[0]
 console.log('h1 tag',h1)
 // h1.innerHTML = "this is from js"
 h1.innerText = "this is from js"
 h1.style.color = "blue"
 h1.style.backgroundColor = "yellow" */
 
-/*var body = document.getElementsByTagName('body')[0]
+//function
+/*var body = document.getElementsByTagName('body')[0] //اول بدي داخل html
 function changeBGRed(){
     body.style.backgroundColor = "red"
 }
@@ -90,14 +92,16 @@ function changeBGBlack(){
     body.style.backgroundColor = "black"
 }*/
 
+
 var body = document.getElementsByTagName('body')[0]
 //argument > value passed to the function
 function changeBG(color){
     body.style.backgroundColor = color
 }
+
 var h1 = document.getElementsByTagName('h1')[0]
 var changed = false
-function changeH1(){
+function changH1(){
     // if(h1.innerHTML === "new page"){
     // h1.innerText = "this is from js function"
     // }
@@ -116,7 +120,7 @@ function changeH1(){
 
 var screen = document.getElementById('screen')
 function fullScreen(){
-    screen.log('full screen')
+    console.log('full screen')
     screen.requestFullscreen()
     // screen.webkitRequestFullscreen()
     document.exitFullscreen()
