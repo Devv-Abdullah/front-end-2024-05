@@ -1,0 +1,16 @@
+.btn-outline-success{
+    width: 100px;
+    background-color: red;
+}
+
+.form-control:hover{
+    background-color: green;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: blue;
+}
+
+.navbar-light .navbar-brand{
+    color: green;
+}
