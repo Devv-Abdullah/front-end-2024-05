@@ -24,7 +24,7 @@ form.addEventListener('submit', function(event){
     }
     // console.log(userData);
     console.log(allUsers);
-    if(password.value === confirmPassword.value){
+    if(allUsers.password.value == allUsers.confirmPassword.value){
     allUsers.push(userData);
     }
     
