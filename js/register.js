@@ -24,8 +24,11 @@ form.addEventListener('submit', function(event){
     }
     // console.log(userData);
     console.log(allUsers);
-    if(allUsers.password.value == allUsers.confirmPassword.value){
+    if(password.value == confirmPassword.value){
     allUsers.push(userData);
+    }
+    else{
+        alert("password and confirm s\password are not the same")
     }
     
     // JSON :> javascript object nation
