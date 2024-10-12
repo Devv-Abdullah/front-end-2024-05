@@ -9,24 +9,50 @@ registerForm.addEventListener('click', function(e){
     console.log(allUsers);
 
     for(var i=0; i<allUsers.length; i++){
-        if(allUsers[i].email === email.value && allUsers[i].password === password.value){
-            console.log('email already exists');
+        // if(allUsers[i].email === email.value && allUsers[i].password === password.value){
+        //     console.log('email already exists');
+        //     Swal.fire({
+        //         position: "top-center",
+        //         icon: "success",
+        //         title: "email already exists",
+        //         showConfirmButton: false,
+        //         timer: 1500
+        //       });
+        //     // window.location.href = 'index.html';
+        // }
+        // else{
+        //     Swal.fire({
+        //         icon: "error",
+        //         title: "login failed check your email and password",
+        //         text: "Something went wrong!",
+        //         footer: '<a href="#">Why do I have this issue?</a>'
+        //       });
+        // }
+
+        if(allUsers[i].email != email.value){
             Swal.fire({
-                position: "top-center",
-                icon: "success",
-                title: "email already exists",
-                showConfirmButton: false,
-                timer: 1500
-              });
-            // window.location.href = 'index.html';
+                        icon: "error",
+                        title: "wrong email",
+                        text: "Something went wrong!",
+                        footer: '<a href="#">Why do I have this issue?</a>'
+                      });
+        }
+        else if(allUsers[i].password != password.value){
+            Swal.fire({
+                        icon: "error",
+                        title: "wrong password",
+                        text: "Something went wrong!",
+                        footer: '<a href="#">Why do I have this issue?</a>'
+                      });
         }
         else{
             Swal.fire({
-                icon: "error",
-                title: "login failed check your email and password",
-                text: "Something went wrong!",
-                footer: '<a href="#">Why do I have this issue?</a>'
-              });
+                        position: "top-center",
+                        icon: "success",
+                        title: "email already exists",
+                        showConfirmButton: false,
+                        timer: 1500
+                      });
         }
     }
 })
