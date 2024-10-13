@@ -169,15 +169,20 @@
 
     <!-- new lecture -->
 
-    <h1 onclick="changH1()">new page</h1>
+    <!-- <h1 onclick="changH1()">new page</h1> -->
+    <h1 id="title">new page</h1>
     <img onclick="fullScreen()" id="screen" src="https://i.pinimg.com/474x/e6/25/da/e625da82a7c96fae106936b5d27abb73.jpg" width="200px" height="200px">
 
     <ul>
         <li><button onclick="changeBG('blue')">blue</button></li>
         <li><button onclick="changeBG('red')">red</button></li>
+        <li><button id="log">log data</button></li>
         <li><button onclick="changeBG('green')">green</button></li>
         <li><button onclick="changeBG('yellow')">yellow</button></li>
         <li><button onclick="changeBG('black')">black</button></li>
+        
+        <li><button onclick="changeLanguage('ar')">ar</button></li>
+        <li><button onclick="changeLanguage('eng')">eng</button></li>
     </ul>
     
     <script src="/js/index.js">

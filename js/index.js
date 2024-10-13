@@ -125,3 +125,32 @@ function fullScreen(){
     // screen.webkitRequestFullscreen()
     document.exitFullscreen()
 }
+
+function logData(){
+    console.log('i am just a function');
+}
+
+var logDa = document.getElementById('log');
+logDa.onclick = function(){
+    logData();
+}
+
+
+var title = document.getElementById('title');
+var lang = localStorage.getItem('lang');
+changeLanguage(lang);
+
+function changeLanguage(lang){
+    console.log("Language changed to " ,lang);
+    // title.innerText = "this is title " +lang;
+    if(lang === 'eng'){
+        title.innerText = "this lang is eng";
+        localStorage.setItem('lang', lang);
+        document.dir = "ltr";
+    }
+    else if(lang === 'ar'){
+        title.innerText = "هذه اللغه عربيه"
+        localStorage.setItem('lang', lang);
+        document.dir = "rtl";
+    }
+}
